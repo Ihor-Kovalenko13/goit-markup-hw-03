@@ -30,10 +30,10 @@ body {
 /* Container */
 .container {
     max-width: 1158px;
-    padding-left: 15px;
-    padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 /* Section spacing */
@@ -93,7 +93,7 @@ body {
 
 /* ====== Hero Section ====== */
 .hero {
-    background-color: #2e2f42;
+    background-color: #2E2F42;
     text-align: center;
     padding: 188px 0;
 }
@@ -101,9 +101,14 @@ body {
 .hero-title {
     font-size: 56px;
     line-height: 1.07;
-    text-align: center;
     letter-spacing: 0.02em;
     color: #ffffff;
+}
+
+.hero {
+    background-color: #2E2F42;
+    text-align: center;
+    padding: 188px 0;
 }
 
 .hero-button {
@@ -118,17 +123,19 @@ body {
     padding: 16px 32px;
     border: none;
     border-radius: 4px;
-    transition: background-color 250ms ease;
+    transition: color 250ms ease;
 }
 
 .hero-button:hover,
 .hero-button:focus {
-    background-color: #404BBF;
+    color: #404BBF;
 }
 
 /* ====== Features Section ====== */
 .features-section {
     background-color: #ffffff;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .features-list {
@@ -154,7 +161,6 @@ body {
     letter-spacing: 0.02em;
     color: #434455;
 }
-
 /* ====== Portfolio Section ====== */
 .portfolio {
     background-color: #ffffff;
@@ -173,27 +179,15 @@ body {
 }
 
 .portfolio-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 48px 24px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
+    /* Removed: display, flex-wrap, gap, padding, margin */
 }
 
 .portfolio-item {
-    width: calc((100% - 48px) / 3);
-    background-color: #ffffff;
-    box-shadow:
-        0px 2px 1px rgba(0, 0, 0, 0.08),
-        0px 1px 1px rgba(0, 0, 0, 0.16),
-        0px 1px 6px rgba(0, 0, 0, 0.08);
-    border: 1px solid #e7e9fc;
-    transition: box-shadow 250ms ease;
+    /* Removed: width, background-color, box-shadow, border, transition */
 }
 
 .portfolio-thumb {
-    overflow: hidden;
+    /* Removed: overflow */
 }
 
 .portfolio-img {
@@ -228,9 +222,7 @@ body {
 }
 
 .footer-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    /* Removed: display, flex-direction, align-items */
 }
 
 .footer-logo {
