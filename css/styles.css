@@ -19,11 +19,11 @@ body {
     letter-spacing: 0.02em;
 }
 
-/* Скидання маркерів та підкреслень */
+/* === Reset  === */
 ul {
     list-style: none;
-    margin: 0;
     padding: 0;
+    margin: 0;
 }
 
 a {
@@ -31,83 +31,33 @@ a {
     color: inherit;
 }
 
-button {
-    font-family: inherit;
-    cursor: pointer;
+address {
+    font-style: normal;
 }
 
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
-
-/* ====== Utility classes ====== */
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border: 0;
-}
-
-/* ====== Container ====== */
-.container {
-    max-width: 1158px;
-    padding: 0 15px;
-    margin: 0 auto;
-}
-
-/* ====== Header ====== */
-.header {
-    border-bottom: 1px solid #e7e9fc;
-    background-color: #ffffff;
-}
-
-.header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 24px 0;
-}
-
-.nav {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-}
-
+/* === Logo === */
 .logo {
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
-    margin-right: 76px;
 }
 
 .logo-accent {
     color: #2e2f42;
 }
 
-.nav-list {
-    display: flex;
-    gap: 40px;
-}
-
+/* === Navigation === */
 .nav-link {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2e2f42;
-    padding: 24px 0;
-    transition: color 250ms ease-in-out;
+    transition: color 250ms ease;
 }
 
 .nav-link:hover,
@@ -115,32 +65,17 @@ img {
     color: #404bbf;
 }
 
-/* ====== Contacts ====== */
-.contacts {
-    font-style: normal;
-}
-
-.contacts-list {
-    display: flex;
-    gap: 40px;
-}
-
-.contacts-list:hover,
-.contacts-list:focus {
-    color: #404BBF;
-}
-
-
-.contacts-link {
+/* === Contacts === */
+.contact-link {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
-    transition: color 250ms ease-in-out;
+    transition: color 250ms ease;
 }
 
-.contacts-link:hover,
-.contacts-link:focus {
+.contact-link:hover,
+.contact-link:focus {
     color: #404bbf;
 }
 
