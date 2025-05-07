@@ -15,7 +15,8 @@ body {
     font-family: 'Roboto', sans-serif;
     color: #434455;
     background-color: #ffffff;
-    margin: 0;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
 }
 
 /* Скидання маркерів та підкреслень */
@@ -307,4 +308,41 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+}
+
+.footer {
+    background-color: #2e2f42;
+    padding: 100px 0;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Логотип у футері */
+.footer-logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #4d5ae5;
+    text-decoration: none;
+    margin-bottom: 16px;
+}
+
+.logo-accent {
+    color: #f4f4fd;
+}
+
+/* Текст під логотипом */
+.footer-text {
+    color: #f4f4fd;
+    max-width: 264px;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
 }
