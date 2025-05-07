@@ -1,13 +1,21 @@
 /* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
 a {
     text-decoration: none;
     color: inherit;
 }
 
-ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+address {
+    font-style: normal;
 }
 
 /* ====== Base styles ====== */
@@ -19,20 +27,19 @@ body {
     letter-spacing: 0.02em;
 }
 
-/* === Reset  === */
-ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+/* Container */
+.container {
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-address {
-    font-style: normal;
+/* Section spacing */
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 /* === Logo === */
@@ -51,6 +58,11 @@ address {
 }
 
 /* === Navigation === */
+.nav-link-active:hover,
+.nav-link-active:focus {
+    color: #404bbf;
+}
+
 .nav-link {
     font-weight: 500;
     font-size: 16px;
@@ -87,34 +99,36 @@ address {
 }
 
 .hero-title {
-    max-width: 496px;
-    margin: 0 auto 48px;
-    font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
+    text-align: center;
     letter-spacing: 0.02em;
     color: #ffffff;
 }
 
 .hero-button {
-    background-color: #4d5ae5;
-    color: #ffffff;
-    border: none;
-    border-radius: 4px;
-    padding: 16px 32px;
+    background-color: #4D5AE5;
+    font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    transition: background-color 250ms ease-in-out;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 16px 32px;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 250ms ease;
 }
 
 .hero-button:hover,
 .hero-button:focus {
-    background-color: #404bbf;
+    background-color: #404BBF;
 }
-.section {
-    padding: 120px 0;
+
+/* ====== Features Section ====== */
+.features-section {
+    background-color: #ffffff;
 }
 
 .features-list {
@@ -123,11 +137,10 @@ address {
 }
 
 .features-item {
-    width: calc((100% - 72px) / 4);
+    width: 264px;
 }
 
 .features-title {
-    margin-bottom: 8px;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -142,57 +155,11 @@ address {
     color: #434455;
 }
 
-.team {
-    background-color: #f4f4fd;
-}
-
-.team-title {
-    margin-bottom: 72px;
-    text-align: center;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.11;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-}
-
-.team-list {
-    display: flex;
-    gap: 24px;
-    text-align: center;
-}
-
-.team-item {
-    background-color: #ffffff;
-    border-radius: 0 0 4px 4px;
-    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.08),
-        0px 1px 1px rgba(0, 0, 0, 0.16),
-        0px 1px 6px rgba(0, 0, 0, 0.08);
-    width: calc((100% - 72px) / 4);
-}
-
-.team-content {
-    padding: 32px 0;
-}
-
-.team-name {
-    margin-bottom: 8px;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-}
-
-.team-position {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #434455;
-}
-
+/* ====== Portfolio Section ====== */
 .portfolio {
     background-color: #ffffff;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .portfolio-title {
@@ -209,24 +176,34 @@ address {
     display: flex;
     flex-wrap: wrap;
     gap: 48px 24px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .portfolio-item {
     width: calc((100% - 48px) / 3);
     background-color: #ffffff;
-    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.08),
+    box-shadow:
+        0px 2px 1px rgba(0, 0, 0, 0.08),
         0px 1px 1px rgba(0, 0, 0, 0.16),
         0px 1px 6px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e7e9fc;
+    transition: box-shadow 250ms ease;
 }
 
 .portfolio-thumb {
     overflow: hidden;
 }
 
+.portfolio-img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 .portfolio-content {
     padding: 32px 16px;
-    border: 1px solid #e7e9fc;
-    border-top: none;
 }
 
 .portfolio-name {
@@ -256,7 +233,6 @@ address {
     align-items: flex-start;
 }
 
-/* Логотип у футері */
 .footer-logo {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -265,19 +241,17 @@ address {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
-    text-decoration: none;
     margin-bottom: 16px;
 }
 
-.logo-accent {
+.footer-logo-accent {
     color: #f4f4fd;
 }
 
-/* Текст під логотипом */
 .footer-text {
-    color: #f4f4fd;
-    max-width: 264px;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    color: #f4f4fd;
+    max-width: 264px;
 }
