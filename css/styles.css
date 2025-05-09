@@ -1,5 +1,12 @@
 
 /* ====== Base styles ====== */
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
 body {
     font-family: 'Roboto', sans-serif;
     color: #434455;
